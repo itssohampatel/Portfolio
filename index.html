@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css?y=6">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+<body>
+	
+
+	<div class="page" id="first">
+		<header >
+			<div class="fw">
+				<i class="fa fa-bars" onclick="toggledrawer()" style="font-size:28px;"></i>
+				<div class="logo" onclick="home()"	>
+					<h1>Mr.333</h1>
+				</div>
+				<div class="menu">
+						<ul class="menui">
+							<li class="item" onclick="menuclick('#first')">Home</li>
+							<li class="item" onclick="menuclick('#second')">About</li>
+							<li class="item" onclick="menuclick('#third')">Achievements</li>
+							<li class="item" onclick="menuclick('#fourth')">Skills</li>
+							<li class="item" onclick="menuclick('#fifth')">Projects</li>
+							<li class="item" onclick="menuclick('#sixth')">Contact</li>
+						</ul>
+				</div>
+			</div>
+		</header>
+		<!--   <div class="container" id="particle-js">
+    			<p>I AM <span class="typed-text" style="color: #f44336;"></span><span class="cursor" >&nbsp;</span></p>
+ 		 </div> -->
+
+ 		<center><button class="cv" onclick="pen()">CV DOWNLOAD</button>
+ 			<div class="flex-center">
+			  <i class="fa fa-github fa-4x icon-3d"></i>
+			  <i class="fa fa-git fa-4x icon-3d"></i>
+			  <i class="fa fa-twitter fa-4x icon-3d"></i>
+			  <i class="fa fa-facebook fa-4x icon-3d"></i>
+			  <i class="fa fa-instagram fa-4x icon-3d"></i>
+			  <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+			</div>
+
+ 		</center> 
+
+	</div>	
+	<div class="page" id="second">
+		<div class="titlesh1 title">
+			<h1>< ABOUT SOHAM ></h1>
+		</div> 
+		<div class="content">
+			<h3>I was born in 2000. I live in Ahmedabad. I am Software Developer and I am working as a Freelancer. I’ve mostly worked professionally with Java, C, C++ and Python but also a little bit with Ruby,MySQL and PHP. I like building new stuff and work with other people – nothing really interesting is ever built alone! Beside programming I am interested in sports (running, mountain biking, strength training,) </h3>
+		</div>
+		<center>
+		<img id="skill" src="images/rubik.png" title="cubing">
+		<img id="skill" src="images/guitar.png" title="guitar">
+		<img id="skill" src="images/taekwondo.png" title="taekwondo">
+		</center>
+	</div>	
+	<div class="page" id="third">
+		<div class="title">
+			<h1>< ACHIEVEMENTS ></h1>
+		</div>
+		<center class="wca">
+		<img src="images/wca.svg" style="margin: 0px"id="cubing" title="cubing">
+		<div class="wcat">
+	<h1 style="margin: 0px"><a style="color: #e64503" href="https://www.worldcubeassociation.org/persons/2019PATE20"  target=”_blank” title="My WCA Id">WORLD CUBE ASSOCIATION</a> </h1>
+		</div>
+		<img class="cert" src="images/certificate.png" title="certificate">
+		<img class="cert" src="images/certificate.png" title="certificate">
+		<img class="cert" src="images/certificate.png" title="certificate">
+		</center>
+	</div>
+	<div class="page" id="fourth">
+		<div class="title">
+			<h1>< SKILLS ></h1>
+		</div>
+		<p>PHOTO EDITING</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>70%</span>
+			</div>
+		</div>
+		<p>HTML / CSS  / JS</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>80%</span>
+			</div>
+		</div>
+		<p>C</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>100%</span>
+			</div>
+		</div>
+		<p>C++</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>95%</span>
+			</div>
+		</div>
+		<p>JAVA</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>85%</span>
+			</div>
+		</div>
+		<p>Adv. JAVA</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>70%</span>
+			</div>
+		</div>
+		<p>PHP / MySQL</p>
+		<div class="progress">
+			<div class="progress-bar">
+				<span>60%</span>
+			</div>
+		</div>
+	</div>
+	<div class="page" id="fifth">
+		<div class="title">
+			<h1>< PROJECTS ></h1>
+		</div>
+		<center>
+			<div class="projects">
+				<div class="profill">
+					<ul class="filter-menu">
+						<li class="active" data-filter="*">ALL</li>
+						<li  data-filter=".html">HTML/CSS/JS</li>
+						<li  data-filter=".php">PHP</li>
+						<li  data-filter=".c">C/C++</li>
+						<li  data-filter=".java">JAVA</li>
+						<li  data-filter=".android">ANDROID</li>
+					</ul>
+				</div>
+				<div class="filter-content">
+					 <div class="row grid">
+				        <div class=" all html">
+				          <div class="item">
+				            <img src="images/certificate.png" alt="Work 1">
+				           <!--  <div class="p-inner">
+				              <h5>Work 1</h5>
+				              <div class="cat">HTML/CSS/JS</div>
+				            </div> -->
+				          </div>
+				        </div>
+				        <div class="all php">
+				          <div class="item">
+				            <img src="images/certificate.png" alt="Work 1">
+				           <!--  <div class="p-inner">
+				              <h5>Work 1</h5>
+				              <div class="cat">PHP</div>
+				            </div> -->
+				          </div>
+				        </div>
+				        <div class="all c">
+				          <div class="item">
+				            <img src="images/certificate.png" alt="Work 1">
+				           <!--  <div class="p-inner">
+				              <h5>Work 1</h5>
+				              <div class="cat">C/C++</div>
+				            </div> -->
+				          </div>
+				        </div>
+				        <div class="all java">
+				          <div class="item">
+				            <img src="images/certificate.png" alt="Work 1">
+				           <!--  <div class="p-inner">
+				              <h5>Work 1</h5>
+				              <div class="cat">JAVA</div>
+				            </div> -->
+				          </div>
+				        </div>
+				        <div class="all android">
+				          <div class="item">
+				            <img src="images/certificate.png" alt="Work 1">
+				          <!--   <div class="p-inner">
+				              <h5>Work 1</h5>
+				              <div class="cat">ANDROID</div>
+				            </div> -->
+				          </div>
+				        </div>
+				        
+				      </div>
+				</div>
+			</div>
+		</center>
+	</div>
+	<div class="page" id="sixth">
+		<div class="title">
+			<h1>< CONTACT ></h1>
+		</div>
+			<section id="hire">
+			<form>
+			      <div class="field name-box">
+				        <input type="text" id="name" placeholder="Who Are You?"/>
+		        		<label for="name">Name</label>
+			      </div>
+
+			      <div class="field email-box">
+				        <input type="text" id="email" placeholder="name@email.com"/>
+				        <label for="email">Email</label>
+			      </div>
+
+			      <div class="field msg-box">
+				        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+				        <label for="msg">Msg</label>
+			      </div>
+
+			      <input class="button" type="submit" value="Send" />
+		  </form>
+		</section>
+		<center>
+			<div class="flex">
+			  <i class="fa fa-github fa-4x icon-3d"></i>
+			  <i class="fa fa-git fa-4x icon-3d"></i>
+			  <i class="fa fa-twitter fa-4x icon-3d"></i>
+			  <i class="fa fa-facebook fa-4x icon-3d"></i>
+			  <i class="fa fa-instagram fa-4x icon-3d"></i>
+			  <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+			</div>
+		</center>
+	</div>
+</body>
+
+<script type="text/javascript">
+	function pen(){
+		window.open("my3.pdf","_blank");
+	}
+	var outside=false;
+	function toggledrawer(){
+		if (outside) {
+			$('div.menu').css('margin-left','-100vw');
+		}else{
+			$('div.menu').css('margin-left','0vw');
+		}
+		outside=!outside;
+	}
+	$(document).scroll(function () {
+		var x = $(document).scrollTop();
+		if(x>0){
+			$('header').css('background-color','#fff');
+			$('header').css('color','#211e27');
+			$('logo').css('color','#211e27');
+			$('header').css('box-shadow','0 25px 50px rgba(0, 0, 0, 0.045)');
+			// alert("i m alert");
+			// $('header').css('height','8vh');
+		}else{
+			
+			$('header').css('background-color','transparent');
+			$('header').css('color','#fff');
+			$('header').css('box-shadow','none');
+			// $('header').css('height','10vh');
+		}
+		if(x>$('#fourth').offset().top-100){
+			let progressBars  = document.querySelectorAll('.progress-bar');
+			let values = [
+				'70%',
+				'80%',
+				'100%',
+				'95%',
+				'85%',
+				'70%',
+				'60%',
+			];
+			progressBars.forEach((progress,index)=>{
+				progress.style.width = values[index];
+
+			});
+		}
+	});
+	function menuclick(str){
+		$([document.documentElement, document.body]).animate({
+        scrollTop: $(str).offset().top
+    }, 500);
+	}
+		$(window).ready(function() {
+    // start up after 2sec no matter what
+   		setTimeout(function(){
+       	 $('#fourth').removeClass("process-bar").addClass('process');
+   		// $('canvas').css('z-index','-1');
+   		 }, 2000);
+	});
+
+			$('textarea').blur(function () {
+			    $('#hire textarea').each(function () {
+			        $this = $(this);
+			        if ( this.value != '' ) {
+			          $this.addClass('focused');
+			          $('textarea + label + span').css({'opacity': 1});
+			        }
+			        else {
+			          $this.removeClass('focused');
+			          $('textarea + label + span').css({'opacity': 0});
+			        }
+			    });
+			});
+
+			$('#hire .field:first-child input').blur(function () {
+			    $('#hire .field:first-child input').each(function () {
+			        $this = $(this);
+			        if ( this.value != '' ) {
+			          $this.addClass('focused');
+			          $('.field:first-child input + label + span').css({'opacity': 1});
+			        }
+			        else {
+			          $this.removeClass('focused');
+			          $('.field:first-child input + label + span').css({'opacity': 0});
+			        }
+			    });
+			});
+
+			$('#hire .field:nth-child(2) input').blur(function () {
+			    $('#hire .field:nth-child(2) input').each(function () {
+			        $this = $(this);
+			        if ( this.value != '' ) {
+			          $this.addClass('focused');
+			          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+			        }
+			        else {
+			          $this.removeClass('focused');
+			          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+			        }
+			    });
+			});
+			const typedTextSpan = document.querySelector(".typed-text");
+			const cursorSpan = document.querySelector(".cursor");
+
+			const textArray = ["Software Developer. ", " Web Developer. "," Hardware Engineer. ", " Network Architect. ", "Editor. ",];
+			const typingDelay = 100;
+			const erasingDelay = 100;
+			const newTextDelay = 2000; // Delay between current and next text
+			let textArrayIndex = 0;
+			let charIndex = 0;
+
+			function type() {
+			  if (charIndex < textArray[textArrayIndex].length) {
+			    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+			    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex).toUpperCase();
+			    charIndex++;
+			    setTimeout(type, typingDelay);
+			  } 
+			  else {
+			    cursorSpan.classList.remove("typing");
+			  	setTimeout(erase, newTextDelay);
+			  }
+			}
+
+			function erase() {
+				if (charIndex > 0) {
+			    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+			    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1).toUpperCase();;
+			    charIndex--;
+			    setTimeout(erase, erasingDelay);
+			  } 
+			  else {
+			    cursorSpan.classList.remove("typing");
+			    textArrayIndex++;
+			    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+			    setTimeout(type, typingDelay + 1100);
+			  }
+			}
+
+			document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+			  if(textArray.length) setTimeout(type, newTextDelay + 250);
+			});
+			particlesJS.load('first','partical.json',function(){});
+			
+		
+				var $ = jQuery;
+				var $grid = $('.grid').isotope({
+					itemSelector:'.all'
+				});
+
+			$('.profill .filter-menu').on('click','li',function(){
+				
+				var filterValue = $(this).attr('data-filter');
+				console.log(filterValue);
+				$grid.isotope({filter:filterValue});
+				return false;
+			});
+
+			$('.profill .filter-menu li').click(function(){
+				$(this).addClass('active');
+				$(this).siblings().removeClass('active');
+			});
+		// 	$('.profill ul li').click(function(){
+		//   $('.profill ul li').removeClass('active');
+		//   $(this).addClass('active');
+		  
+		//   var data = $(this).attr('data-filter');
+		//   $grid.isotope({
+		//     filter: data
+		//   })
+		// });
+
+		// var $grid = $(".grid").isotope({
+		//   itemSelector: ".all",
+		//   percentPosition: true,
+		//   masonry: {
+		//     columnWidth: ".all"
+		//   }
+		// })
+
+		</script>
+		</html> 

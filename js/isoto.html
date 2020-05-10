@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>khagd</title>
+	<style type="text/css">
+		.section {
+  padding: 30px 0;
+  color: #333;
+}
+.section .top-side {
+  text-align: center;
+}
+.section .top-side .title {
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+}
+.section .top-side .title:after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid #494949;
+  margin: 8px auto;
+}
+.section .top-side h2 {
+  font-weight: 700;
+}
+.section.portfolio .filters {
+  text-align: center;
+  margin-top: 50px;
+}
+.section.portfolio .filters ul {
+  padding: 0;
+}
+.section.portfolio .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+}
+.section.portfolio .filters ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  transition: width 350ms ease-out;
+}
+.section.portfolio .filters ul li:hover:after {
+  width: calc(100% - 60px);
+  transition: width 350ms ease-out;
+}
+.section.portfolio .filters ul li.active:after {
+  width: calc(100% - 60px);
+}
+.section.portfolio .filters-content {
+  margin-top: 50px;
+}
+.section.portfolio .filters-content .show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 350ms;
+}
+.section.portfolio .filters-content .hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms;
+}
+.section.portfolio .filters-content .item {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.section.portfolio .filters-content .item .p-inner {
+  padding: 20px 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.section.portfolio .filters-content .item .p-inner h5 {
+  font-size: 15px;
+}
+.section.portfolio .filters-content .item .p-inner .cat {
+  font-size: 13px;
+}
+.section.portfolio .filters-content .item img {
+  width: 100%;
+}
+
+	</style>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</head>
+<body>
+<section class="portfolio section">
+  <div class="container">
+    <div class="top-side">
+      <h4 class="title">MY WORKS</h4>
+      <h2>PORTFOLIO</h2>
+    </div>
+    
+    <div class="filters">
+      <ul>
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".corporate">Corporate</li>
+        <li data-filter=".personal">Personal</li>
+        <li data-filter=".agency">Agency</li>
+        <li data-filter=".portal">Portal</li>
+      </ul>
+    </div>
+    
+    <div class="filters-content">
+      <div class="row grid">
+        <div class="col-sm-4 all corporate">
+          <div class="item">
+            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
+            <div class="p-inner">
+              <h5>Work 1</h5>
+              <div class="cat">Corporate</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all personal">
+          <div class="item">
+            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
+            <div class="p-inner">
+              <h5>Work 1</h5>
+              <div class="cat">Personal</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all agency">
+          <div class="item">
+            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
+            <div class="p-inner">
+              <h5>Work 1</h5>
+              <div class="cat">Agency</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all portal">
+          <div class="item">
+            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
+            <div class="p-inner">
+              <h5>Work 1</h5>
+              <div class="cat">Portal</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+<script type="text/javascript">
+	$('.filters ul li').click(function(){
+  $('.filters ul li').removeClass('active');
+  $(this).addClass('active');
+  
+  var data = $(this).attr('data-filter');
+  $grid.isotope({
+    filter: data
+  })
+});
+
+var $grid = $(".grid").isotope({
+  itemSelector: ".all",
+  percentPosition: true,
+  masonry: {
+    columnWidth: ".all"
+  }
+})
+</script>
+</body>
+</html>
